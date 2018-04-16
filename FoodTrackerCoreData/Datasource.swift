@@ -18,9 +18,7 @@ class Datasource: NSObject , UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         cell.iamgeView.image = arr[indexPath.row].image as? UIImage
         cell.labelTxt.text = arr[indexPath.row].name
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-//        cell.imageView?.image = arr[indexPath.row].image as? UIImage
-//        cell.detailTextLabel?.text = arr[indexPath.row].name
+
         return cell
         
     }
