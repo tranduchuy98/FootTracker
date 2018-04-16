@@ -49,7 +49,7 @@ class DetailVC: UIViewController ,UIImagePickerControllerDelegate , UINavigation
     
     override func viewWillAppear(_ animated: Bool) {
        // labelTxt.text = "Tap Select Image"
-        imageView.layer.cornerRadius = 150
+
         imageView.layer.masksToBounds = true
         if nameData != nil {
             labelTxt.text = ""
