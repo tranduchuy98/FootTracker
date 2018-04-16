@@ -13,6 +13,11 @@
 		E517B1D4206DCBD00099D4C2 /* FoodTrackerCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E517B1D2206DCBD00099D4C2 /* FoodTrackerCoreData.xcdatamodeld */; };
 		E517B1D6206DCBD00099D4C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E517B1D5206DCBD00099D4C2 /* Assets.xcassets */; };
 		E517B1D9206DCBD00099D4C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E517B1D7206DCBD00099D4C2 /* LaunchScreen.storyboard */; };
+		E517B1E1206DCD3A0099D4C2 /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E517B1E0206DCD3A0099D4C2 /* Datasource.swift */; };
+		E517B1E3206DCFD80099D4C2 /* Datasevirce.swift in Sources */ = {isa = PBXBuildFile; fileRef = E517B1E2206DCFD80099D4C2 /* Datasevirce.swift */; };
+		E517B1E5206DDA3F0099D4C2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E517B1E4206DDA3F0099D4C2 /* TableViewCell.swift */; };
+		E517B1E7206DE2C20099D4C2 /* DetailViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E517B1E6206DE2C20099D4C2 /* DetailViewcontroller.swift */; };
+		E573A253206F0D53009D86DD /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573A252206F0D53009D86DD /* Delegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		E517B1D5206DCBD00099D4C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E517B1D8206DCBD00099D4C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E517B1DA206DCBD00099D4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E517B1E0206DCD3A0099D4C2 /* Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
+		E517B1E2206DCFD80099D4C2 /* Datasevirce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datasevirce.swift; sourceTree = "<group>"; };
+		E517B1E4206DDA3F0099D4C2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E517B1E6206DE2C20099D4C2 /* DetailViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewcontroller.swift; sourceTree = "<group>"; };
+		E573A252206F0D53009D86DD /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				E517B1CB206DCBD00099D4C2 /* AppDelegate.swift */,
+				E517B1E0206DCD3A0099D4C2 /* Datasource.swift */,
+				E573A252206F0D53009D86DD /* Delegate.swift */,
+				E517B1E6206DE2C20099D4C2 /* DetailViewcontroller.swift */,
 				E517B1CD206DCBD00099D4C2 /* ViewController.swift */,
 				E517B1CF206DCBD00099D4C2 /* Main.storyboard */,
+				E517B1E2206DCFD80099D4C2 /* Datasevirce.swift */,
 				E517B1D5206DCBD00099D4C2 /* Assets.xcassets */,
+				E517B1E4206DDA3F0099D4C2 /* TableViewCell.swift */,
 				E517B1D7206DCBD00099D4C2 /* LaunchScreen.storyboard */,
 				E517B1DA206DCBD00099D4C2 /* Info.plist */,
 				E517B1D2206DCBD00099D4C2 /* FoodTrackerCoreData.xcdatamodeld */,
@@ -141,7 +156,12 @@
 			files = (
 				E517B1CE206DCBD00099D4C2 /* ViewController.swift in Sources */,
 				E517B1D4206DCBD00099D4C2 /* FoodTrackerCoreData.xcdatamodeld in Sources */,
+				E517B1E7206DE2C20099D4C2 /* DetailViewcontroller.swift in Sources */,
 				E517B1CC206DCBD00099D4C2 /* AppDelegate.swift in Sources */,
+				E573A253206F0D53009D86DD /* Delegate.swift in Sources */,
+				E517B1E5206DDA3F0099D4C2 /* TableViewCell.swift in Sources */,
+				E517B1E3206DCFD80099D4C2 /* Datasevirce.swift in Sources */,
+				E517B1E1206DCD3A0099D4C2 /* Datasource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +299,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KP2PUCP22W;
 				INFOPLIST_FILE = FoodTrackerCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = huy.FoodTrackerCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,7 +315,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KP2PUCP22W;
 				INFOPLIST_FILE = FoodTrackerCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = huy.FoodTrackerCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
